@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Countdown </title>
+         <script>
+       //Natasha Hernandez
+       //Blast off assignment was fun
+
+        function StartTheCountdown()
+        {
+            //This function will start the countdown
+
+        var countdown = 10;
+        // to keep track of real time
+        var timeout = 10000;
+        //1000 = 1 second because we are using milliseconds
+        setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = "Start the Timer!";
+        countdown = countdown - 1;
+
+        }, timeout)
+        timeout = timeout - 1000;
+
+        //We need to do this 10 times
+        setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = countdown;
+        countdown = countdown - 1;
+
+        }, timeout)
+        timeout = timeout - 1000;  
+        //We need to do this 10 times
+            setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = countdown;
+        countdown = countdown - 1;
+
+        }, timeout)
+        timeout = timeout - 1000;   
+         //We need to do this 10 times
+            setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = countdown;
+        countdown = countdown - 1;
+
+        }, timeout)
+        timeout = timeout - 1000;    
+         //We need to do this 10 times
+            setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = countdown;
+        countdown = countdown - 1;
+
+        }, timeout)
+        timeout = timeout - 1000;   
+         //We need to do this 10 times
+           setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = countdown;
+        countdown = countdown - 1;
+
+        }, timeout)
+        timeout = timeout - 1000;  
+         //We need to do this 10 times
+           setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = countdown;
+        countdown = countdown - 1;
+         //We need to do this 10 times
+        }, timeout)
+        timeout = timeout - 1000; 
+         //We need to do this 10 times
+           setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = countdown;
+        countdown = countdown - 1;
+
+        }, timeout)
+        timeout = timeout - 1000;   
+         //We need to do this 10 times
+           setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = countdown;
+        countdown = countdown - 1;
+
+        }, timeout)
+        timeout = timeout - 1000;   
+         //We need to do this 10 times
+           setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = countdown;
+        countdown = countdown - 1;
+
+        }, timeout)
+        timeout = timeout - 1000;  
+        
+          setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = countdown;
+        countdown = countdown - 1;
+
+        }, timeout)
+        timeout = timeout - 1000;
+
+        setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = "Start the Timer!";
+        countdown = countdown - 1;
+
+        }, timeout)
+        timeout = timeout - 1000;
+        
+     }
+    
+    
+    </script>
+        </head>
+      <body>
+          <h1>Countdown</h1>
+          <p>This will count down!</p>
+          <h2>Countdown</h2> 
+            <!-- This is a button to start the countdown
+            This button will call the function StartTheCountdown()
+            when the user clicks it-->
+          <button type= "button" onclick="StartTheCountdown()",  img src= "UATspaceLogo.jpg"
+          height="200px"
+          weight="200px"
+          > > Start Countdown</button>
+          <p id="CountdownDisplay">10</p>
+      </body>
+</html>
