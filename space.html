@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space</title>
+</head>
+<link rel="stylesheet" href="first.html">
+    <body>
+
+   <script language = "javascript" type = "text/javascript"> 
+        function play() {
+
+        var die1 = 5
+        var die2 = 2
+        //Variables used to determine win or lose     
+
+        var sum = die1+die2
+        //Sum of the two variables 
+
+        document.write("Die 1 = " + die1)
+        //Writes Die 1 into the document 
+        document.write("<br/>")
+        //Adds break between lines on document
+
+        document.write("Die 2 = " + die2)
+         //Writes Die 2 into the document 
+        document.write("<br/>")
+
+        document.write("Sum = " + sum)
+        //Displays result of sum
+        document.write("<br/>")
+
+        if (sum == 7 || sum == 11)
+        { document.write("CRAPS - you lose")
+        document.write("<br/>")
+        }
+        //Displays losing condition
+
+        else if (die1== die2 && die1%2 == 0)
+        {
+        document.write("DOUBLES - you win")
+        document.write("<br/>")
+        }
+        //Displays winning conditions
+    }
+        document.write("Simple Craps")
+        document.write("<br/>")
+        //Title of game
+        play()
+            
+    </script>
+</body>
+</html>
