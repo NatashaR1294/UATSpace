@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Countdown </title>
+      <link rel="stylesheet" href="first_css.css">    
+      
+        <title>Rocket</title> 
          <script>
        //Natasha Hernandez
        //Blast off assignment was fun
@@ -14,8 +16,10 @@
         // to keep track of real time
         var timeout = 10000;
         //1000 = 1 second because we are using milliseconds
+
+        //We need to do this 10 times        
         setTimeout(() => {
-        document.getElementById("CountdownDisplay").innerHTML = "Start the Timer!";
+        document.getElementById("CountdownDisplay").innerHTML = "Blastoff!";
         countdown = countdown - 1;
 
         }, timeout)
@@ -28,93 +32,98 @@
 
         }, timeout)
         timeout = timeout - 1000;  
-        //We need to do this 10 times
-            setTimeout(() => {
+
+        //We need to do this 10 times    
+        setTimeout(() => {
         document.getElementById("CountdownDisplay").innerHTML = countdown;
         countdown = countdown - 1;
 
         }, timeout)
         timeout = timeout - 1000;   
-         //We need to do this 10 times
-            setTimeout(() => {
+
+         //We need to do this 10 times  
+         setTimeout(() => {
         document.getElementById("CountdownDisplay").innerHTML = countdown;
         countdown = countdown - 1;
 
         }, timeout)
         timeout = timeout - 1000;    
-         //We need to do this 10 times
-            setTimeout(() => {
+
+         //We need to do this 10 times  
+         setTimeout(() => {
         document.getElementById("CountdownDisplay").innerHTML = countdown;
         countdown = countdown - 1;
 
         }, timeout)
         timeout = timeout - 1000;   
-         //We need to do this 10 times
-           setTimeout(() => {
+
+         //We need to do this 10 times 
+         setTimeout(() => {
         document.getElementById("CountdownDisplay").innerHTML = countdown;
         countdown = countdown - 1;
 
         }, timeout)
         timeout = timeout - 1000;  
+
          //We need to do this 10 times
-           setTimeout(() => {
+         setTimeout(() => {
         document.getElementById("CountdownDisplay").innerHTML = countdown;
         countdown = countdown - 1;
-         //We need to do this 10 times
+
         }, timeout)
         timeout = timeout - 1000; 
+
          //We need to do this 10 times
-           setTimeout(() => {
+         setTimeout(() => {
         document.getElementById("CountdownDisplay").innerHTML = countdown;
         countdown = countdown - 1;
 
         }, timeout)
         timeout = timeout - 1000;   
+
          //We need to do this 10 times
-           setTimeout(() => {
+         setTimeout(() => {
         document.getElementById("CountdownDisplay").innerHTML = countdown;
         countdown = countdown - 1;
 
         }, timeout)
         timeout = timeout - 1000;   
-         //We need to do this 10 times
-           setTimeout(() => {
-        document.getElementById("CountdownDisplay").innerHTML = countdown;
-        countdown = countdown - 1;
-
-        }, timeout)
-        timeout = timeout - 1000;  
         
-          setTimeout(() => {
+         //We need to do this 10 times
+         setTimeout(() => {
         document.getElementById("CountdownDisplay").innerHTML = countdown;
         countdown = countdown - 1;
 
         }, timeout)
-        timeout = timeout - 1000;
+        timeout = timeout - 1000;   
 
-        setTimeout(() => {
-        document.getElementById("CountdownDisplay").innerHTML = "Start the Timer!";
+         //We need to do this 10 times  
+         setTimeout(() => {
+        document.getElementById("CountdownDisplay").innerHTML = countdown;
         countdown = countdown - 1;
 
         }, timeout)
         timeout = timeout - 1000;
         
      }
+          //Could not get the countdown button to middle of the screen
     
-    
-    </script>
-        </head>
-      <body>
-          <h1>Countdown</h1>
+      </script>
+          </head>
+        <body> 
+          <img src= "BlastRocket.jpg"
+      height="200px"
+      weight="200px">
+         <!--This image was added to make it creative--> 
+  
+          <h1>Rocket</h1>
           <p>This will count down!</p>
           <h2>Countdown</h2> 
             <!-- This is a button to start the countdown
             This button will call the function StartTheCountdown()
             when the user clicks it-->
-          <button type= "button" onclick="StartTheCountdown()",  img src= "UATspaceLogo.jpg"
-          height="200px"
-          weight="200px"
-          > > Start Countdown</button>
+          <button type= "button" onclick="StartTheCountdown()" Start Countdown>
+           Start Countdown</button>
           <p id="CountdownDisplay">10</p>
       </body>
 </html>
