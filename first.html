@@ -22,15 +22,30 @@
     </p>
 
     <script language = "javascript" type = "text/javascript">
-        alert("This is an alert")
-        document.write("First script")
-        var course = "CSC102"
-        var numCredits = 3
-        var passing = true
-        document.write("This class is "+ course + " # credits = " + numCredits)
-        document.write(",<br/>")
-        document.write(" # credits = " + numCredits)
-        document.write("Are you passing?" + passing)
+         
+         document.write("Simple Craps")
+         document.write("<br/>")
+         var die1 = 4
+         var die2 = 4
+         var sum = die1+die2
+         document.write("Die 1 = " + die1)
+         document.write("<br/>")
+         document.write("Die 2 = " + die2)
+         document.write("<br/>")
+         document.write("Sum = " + sum)
+         document.write("<br/>")
+
+         if (sum == 7 || sum == 11)
+         {
+            document.write("CRAPS - you Lose")
+            document.write("<br/>")
+         }
+         else if (die1 == die2 && die1%2 == 0)
+         {
+            document.write("DOUBLES - you win")
+            document.write("<br/>")
+         }
+
     </script>
 </body>
 </html>
