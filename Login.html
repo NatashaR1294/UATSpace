@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="login.css">    
+<head>
+    <Title>
+        UAT Space Login
+    </Title>
+    <!--This is my title-->
+    <!--Natasha Hernandez-->
+</head>
+<body>
+<script src="Login.js"></script>
+<!--This references java file-->
+    <h1>
+        Welcome Back!
+    </h1>
+    <!--header one-->
+    <h2>
+        Please Login to Continue
+    </h2>
+    <!--Header two-->
+    <p id = "loginStatus"> Status of login . . . </p>  
+    <!--locates login id-->
+    <form>
+        <!--represents mulitple ids-->
+        <br>
+         <br id="credSubmit" onsubmit = "return false">
+
+            First Name:  <input type="text" id = "fName" /> 
+         </br>
+
+            Last Name:  <input type = "text" id = "lName" /> 
+            </br>
+
+            Badge Number:  <input type = "number" id ="badgeID" /> 
+            </br>
+
+            <input type="submit" onclick="findCred();" />
+
+            </br>
+
+         </form>
+
+         
+    </body>
+</html>
