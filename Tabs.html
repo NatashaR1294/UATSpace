@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Tabs.css">
+
+</head>
+<body>
+
+<div id="Intro" class="tabcontent">
+  <h1>Welcome</h1>
+  <p>A Quick Introduction!</p>
+</div>
+
+<div id="UATSpace" class="tabcontent">
+  <h1>UAT Space</h1>
+  <p>MY UAT Space Page!</p> 
+</div>
+
+
+<div id="GameDesign" class="tabcontent">
+  <h1>Game Design</h1>
+  <p>Requirements to be a Game Designer</p>
+</div>
+
+<div id="Teacher" class="tabcontent">
+  <h1>Professors Appriciation</h1>
+  <p>Professors deserve recognition!</p>
+</div>
+
+<button class="tablink" onclick="tabName('Intro', this, 'red')" id="defaultOpen">Welcome</button>
+<button class="tablink" onclick="tabName('UATSpace', this, 'green')">UAT Space</button>
+<button class="tablink" onclick="tabName('GameDesign', this, 'blue')">Game Design</button>
+<button class="tablink" onclick="tabName('Teacher', this, 'orange')">Professor Appriciation</button>
+
+<script>
+function tabName(tabName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(tabName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+} 
+ </script>  
+</body>
+</html> 
